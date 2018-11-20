@@ -1,3 +1,10 @@
+let mobile = false;
+
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  mobile = true;
+ }
+
+
 $(function() {
   $("a.nav-link").click(function() {
     if (
@@ -8,11 +15,12 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
-        $("html,body").animate({ scrollTop: target.offset().top - 333 }, 500);
+        $("html,body").animate(
+          { scrollTop: parseInt(target.offset().top, 10) - (mobile ? 345 : 106) },
+          500
+        );
         return false;
       }
     }
   });
 });
-
-// Wie kann ich hier die richtige Position bestimmen?
