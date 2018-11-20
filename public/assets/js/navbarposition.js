@@ -1,5 +1,5 @@
 $(function() {
-  $("a[href*=#]:not([href=#])").click(function() {
+  $("a.nav-link").click(function() {
     if (
       location.pathname.replace(/^\//, "") ==
         this.pathname.replace(/^\//, "") &&
@@ -8,7 +8,7 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
-        $("html,body").animate({ scrollTop: target.offset().top - 50 }, 500);
+        $("html,body").animate({ scrollTop: target.offset().top - 333 }, 500);
         return false;
       }
     }
