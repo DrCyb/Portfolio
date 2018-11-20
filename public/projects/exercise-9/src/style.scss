@@ -1,0 +1,14 @@
+// First your CSS reset
+@import "partials/reset.scss";
+
+// Then your variables for all following SCSS files
+@import "partials/variables.scss";
+
+// All my textstyling goes in here
+@import "partials/typography.scss";
+
+// Elements like body, main ...
+@import "partials/globals.scss";
+
+// Styling for the card module
+@import "partials/card.scss";

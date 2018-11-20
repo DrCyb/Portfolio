@@ -1,0 +1,75 @@
+header {
+  position: relative;
+  background-image: url(../img/flume.jpg);
+  background-size: cover;
+
+  height: 75vh;
+  padding: 100px 100px 0 100px;
+
+  color: #fff;
+
+  .genre {
+    span {
+      background: rgba(0, 0, 0, 0.335);
+
+      padding: 10px;
+      margin-right: 10px;
+      border-radius: 100px;
+    }
+  }
+
+  p {
+    width: 30%;
+  }
+
+  .button {
+    background: rgba(255, 255, 255, 0.288);
+    height: 60px;
+    border-radius: 100px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    &-primary {
+      background: #2C3049;
+    }
+
+    &-group {
+      position: relative;
+      display: flex;
+    }
+
+    &-share {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .artist-navigation {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    bottom: 0;
+    width: 100%;
+
+    &-item {
+      padding: 40px;
+      position: relative;
+
+      &.active::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 10px;
+        left: 35%;
+        height: 4px;
+        width: 30%;
+        background: rgba(255, 255, 255, 0.288);
+        border-radius: 100px;
+      }
+    }
+  }
+}

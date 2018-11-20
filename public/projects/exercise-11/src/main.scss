@@ -1,0 +1,20 @@
+// CSS Reset
+@import 'partials/reset';
+
+// Variables
+@import 'partials/variables';
+
+// Global elements (aside, main)
+@import 'partials/global';
+
+// Just for our text styling
+@import 'partials/typography';
+
+// Hero
+@import 'partials/hero-section';
+
+// Track listing
+@import 'partials/track-listing';
+
+// Album listing
+@import 'partials/album';

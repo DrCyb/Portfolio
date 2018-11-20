@@ -1,0 +1,120 @@
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  background: #ec8889;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  background: white;
+  width: 320px;
+  border-radius: 5px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 20px 30px #c76564;
+}
+
+nav {
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.menu {
+  float: left;
+  width: 10%;
+}
+
+.search {
+  float: right;
+  width: 10%;
+}
+
+h1 {
+  float: left;
+  width: 80%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  margin: 0;
+}
+
+.coffee {
+  width: 30%;
+  display: block;
+  margin: 0 auto 50px auto;
+}
+
+.tabs {
+  text-align: center;
+  box-shadow: 0 20px 10px #dee1e7;
+}
+
+.tabs a {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 0;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+.tabs a.active {
+  border-bottom: 2px solid black;
+  opacity: 1;
+}
+
+.table-wrapper {
+  background: #eceef4;
+  padding: 15px 30px 0 30px;
+  position: relative;
+
+  /* Cut of the overflow on the x-axis */
+  overflow-x: hidden;
+}
+
+table {
+  background: white;
+  width: 95%;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+table:nth-child(2) {
+  position: absolute;
+  top: 15px;
+  right: -89%;
+}
+
+thead th {
+  text-align: left;
+  font-size: 8px;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+thead tr th:nth-child(2),
+thead tr th:nth-child(3),
+tr td:nth-child(2),
+tr td:nth-child(3) {
+  text-align: right;
+}
+
+tr {
+  font-size: 12px;
+}
+
+tr td:first-child {
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: 10px 8px;
+}

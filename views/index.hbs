@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../public/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="intro" class="container-fluid p-0">
+        <div class="intro row m-0">
+            <div class="start">
+                <h1 class="line-1 anim-typewriter">Hi, I am Stephan </h1>
+                <h1 class="line-2">a Web Developer</h1>
+                {{!-- ↓ --}}
+                <a class="arrow smoothScroll" href="/#about">
+                    <img class="myArrow" src="/public/assets/icons/angle-down-solid.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <header>
+            <!-- Navbar -->
+            <nav class="navbar sticky-top navbar-toggleable-md navbar-expand-lg navbar-dark bg-dark" id="navbar">
+                <div class="logo-name d-flex justify-content-end" style="width: 50%">
+                    <a class="navbar-brand text-white w-100 text-left" href="/#about">Stephan Kritzler</a>
+                </div>
+                <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation text-white">
+                    <span class="navbar-toggler-icon text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse text-right" id="navbarNav" id="navbarDiv">
+                    <ul class="navbar-nav d-flex mr-auto w-100" style="justify-content: space-evenly">
+                        <li class="nav-item active">
+                            <a class="nav-link text-white btn-outline-secondary smoothScroll" href="#intro">Home <span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn-outline-secondary next" href="/#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn-outline-secondary next" href="/#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn-outline-secondary next" href="/#knowledge">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn-outline-secondary next" href="/#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white btn-outline-secondary" href="https://github.com/DrCyb" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            {{!-- About --}}
+            <section class="about " id="about">
+                <!-- Image and text -->
+                <div id="seo-friendly">
+                    <div class="seo-friendly-wrapper">
+                        <div class="seo-friendly-left">
+                            <img src="../public/assets/images/greg-rakozy-129733-unsplash.jpg" alt="">
+                        </div>
+                        <div class="seo-friendly-right">
+                            <h3 class="heading">Stephan Kritzler </h3>
+                            <p> I am a student at the Digital Career Institute gGmbH and a prospective JavaScript
+                                developer. There I learned how to use modern tools and technologies to build a front-
+                                and backend.
+                                <br>
+                                Currently, I am looking for an internship to pursue my passion for web development.
+                                I look forward to every opportunity to expand my knowledge and develop professionally
+                                in this field.
+                            </p>
+                            {{!-- <button>READ MORE</button> --}}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- work --}}
+            <section class="work  py-5" id="work">
+                <div class="container-mywork">
+                    <h3 class="heading-mywork">Code</h3>
+                    <div class="row myWork">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 myProject html-img">
+                            <a href="../public/projects/projects.html">
+                                <img src="../public/assets/icons/2000px-HTML5_logo_and_wordmark.svg.png" alt="">
+                            </a>
+                            <p>Projects with HTML5 / CSS3</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 myProject js-img">
+                            <a href="">
+                                <img src="../public/assets/icons/Javascript_720.svg.png" alt="">
+                            </a>
+                            <p>Projects with JavaScript ES6</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 myProject node-img">
+                            <a href="">
+                                <img src="../public/assets/icons/2000px-Node.js_logo.svg.png" alt="">
+                            </a>
+                            <p>Projects with Node.js</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 myProject mongodb-img">
+                            <a href="">
+                                <img src="../public/assets/icons/mongoDB.png" alt="">
+                            </a>
+                            <p>Projects with MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Knowledge/Experience --}}
+            <section class="knowledge" id="knowledge">
+                <div class="container">
+                    <div class="row px-5">
+                        <div class="col-lg-8 col-md-12 col-12 mb-4 ">
+                            <h3 class="heading-mywork">Skills</h3>
+                            <p>Through my training at Digital Career Institute, I attained a strong foundation of
+                                technical
+                                skills, my experience allows me to build websites that work on all devices:
+                                smartphones,
+                                tablets, laptops and desktops. Whether it is small personal site or a big project I use
+                                the
+                                newest technologies like HTML5, CSS3, JavaScript, Node.js, MongoDB, React.js, jQuery,
+                                Twitter Bootstrap, Webpack, and more other.</p>
+                        </div>
+                    </div>
+                    <div class="row experience">
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <h3>Frontend</h3>
+                            <div class="frontend skills-list">
+                                <div class="together">
+                                    <img class="Icon_frontend html" src="/public//assets/icons/2000px-HTML5_logo_and_wordmark.svg.png"
+                                        alt="">
+                                    <h4>HTML 5</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_frontend css" src="/public//assets/icons/CSS_Logo_klein.png" alt="">
+                                    <h4>CSS 3</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_frontend sass" src="/public//assets/icons/Sass_Logo_Color.svg_1200px.png"
+                                        alt="">
+                                    <h4>SASS and SCSS</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_frontend bootstrap" src="/public//assets/icons/bootstrap-svg-icon.png"
+                                        alt="">
+                                    <h4>Bootstrap 4</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_frontend javascript" src="/public//assets/icons/Javascript_720.svg.png"
+                                        alt="">
+                                    <h4>Javascript ES6</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_frontend react" src="/public//assets/icons/1000px-React-icon.svg.png"
+                                        alt="">
+                                    <h4>React.js and Redux</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <h3>Backend</h3>
+                            <div class="backend skills-list">
+                                <div class="together">
+                                    <img class="Icon_backend nodejs" src="/public//assets/icons/2000px-Node.js_logo.svg.png"
+                                        alt="">
+                                    <h4>Node.js</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend express" src="/public//assets/icons/express.png" alt="">
+                                    <h4>Express.js</h4>
+                                </div>
+
+                                <div class="together">
+                                    <img class="Icon_backend mongodb" src="/public//assets/icons/mongoDB.png" alt="">
+                                    <h4>MongoDB</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend passport" src="/public//assets/icons/passport.js2.png" alt="">
+                                    <h4>Passport.js</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend pug" src="/public//assets/icons/pug-svg.png" alt="">
+                                    <h4>PUG.js</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend socketio" src="/public//assets/icons/socket.io.png" alt="">
+                                    <h4>Socket.io</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend mongoose" src="/public//assets/icons/mongoose.png" alt="">
+                                    <h4>Mongoose.js</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend handlebars" src="/public//assets/icons/handlebars_350px.jpeg"
+                                        alt="">
+                                    <h4>Handlebars.js</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 col-12">
+                            <h3>Tools</h3>
+                            <div class="tools skills-list">
+                                <div class="together">
+                                    <img class="Icon_backend webpack" src="/public//assets/icons/webpack.svg" alt="">
+                                    <h4>Webpack</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend markdown" src="/public//assets/icons/Octicons-markdown.svg"
+                                        alt="">
+                                    <h4>Markdown</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend postman" src="/public//assets/icons/postman.png" alt="">
+                                    <h4>Postman</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend compass" src="/public//assets/icons/mongodb-logo-HD.png"
+                                        alt="">
+                                    <h4>MongoDB Compass</h4>
+                                </div>
+                                <div class="together">
+                                    <img class="Icon_backend git" src="/public//assets/icons/github.svg" alt="">
+                                    <h4>Git and GitHub</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-12 col-12 mb-4 ">
+                            <h3 class="heading-mywork">The Future</h3>
+                            <p>I am always looking for new challenges and like to learn. <br> In addition, I grow with
+                                my tasks</p>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <h3 class="heading-mywork">Contact</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="cnt_info">
+                                <ul>
+                                    <li>
+                                        <p><i class="fa fa-home"></i> Grevenbroich, Germany</p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <i class="fa fa-envelope"></i>
+                                            <a href="mailto:stephan.kritzler@gmail.com">stephan.kritzler@gmail.com</a
+                                                mailto:>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <i class="fa fa-phone"></i>
+                                            <a href="tel:+491734267995">+49 173 42 67 995</a mailto:>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <form action="https://formspree.io/stephan.kritzler@gmail.com" method="POST" />
+                            <div class="form-group ">
+                                <label for="exampleInputEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Your Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your message"
+                                    rows="3"></textarea>
+                            </div>
+                            <button method="POST" type="submit text-white" class="btn btn-secondary bg-dark">Send</button>
+                            {{!-- <button type="submit text-white" class="btn btn-secondary bg-dark">My CV</button>
+                            --}}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    </section>
+
+    <footer class="container-fluid p-0">
+        <div class="container" id="ft_sec">
+            <div>
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="ft">
+                        <ul>
+                            <li>
+                                <a data-toggle="tooltip" data-placement="top" title="LinkedIn " href="https://www.linkedin.com/in/stephan-kritzler-8608b7a1/"
+                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li>
+                                <a data-toggle="tooltip" data-placement="top" title="Xing" href="https://www.xing.com/profile/Stephan_Kritzler/cv?sc_o=mxb_p"
+                                    target="_blank"><i class="fab fa-xing"></i></a>
+                            </li>
+                            <li>
+                                <a data-toggle="tooltip" data-placement="top" title="My Code on Github" href="https://github.com/DrCyb"
+                                    target="_blank"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 copyright text-center p-2">
+            <span>
+                &copy; Stephan Kritzler 2018
+            </span>
+        </div>
+        <div class="col-12   disclaimer text-center p-3">
+            <small class="hover">The logos and trademarks used and displayed on my site are expressly not my property,
+                but belong to the respective owners</small> <br>
+            <small class="hover"> Pictures: Creative Comments -
+                Pixabay -
+                Free commercial use -
+                No picture credits necessary</small>
+        </div>
+    </footer>
+    </main>
+    {{!--
+    </div> --}}
+    {{!-- </div> --}}
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    {{!-- Einbindung Animation.js --}}
+    <script src="../public/assets/js/animation.js"></script>
+    <script src="../public/assets/js/menutoggle.js"></script>
+    <script src="../public/assets/js/navbarposition.js"></script>
+</body>
+
+</html>

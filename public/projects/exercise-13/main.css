@@ -1,0 +1,21 @@
+.section-item {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bg-img {
+  background-image: url(new.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-img .row {
+  height: 100%;
+  color: #fff;
+}
+
+.bg-img .row .col {
+  background-color: rgba(0, 0, 0, 0.5);
+}

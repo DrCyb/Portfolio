@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox Exercise</title>
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <aside>
+      <header>
+        <h2>Filter</h2>
+        <img src="" alt="Back arrow" />
+      </header>
+
+      <form>
+        <fieldset class="dates">
+          <legend>Dates</legend>
+
+          <div>
+            <label for="checkin-date">Check in</label>
+            <input value="" type="date" name="" id="checkin-date" />
+          </div>
+
+          <div>
+            <label for="checkout-date">Check out</label>
+            <input value="" type="date" name="" id="checkout-date" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Price range</legend>
+
+          <div>
+            <label for="price-range"></label>
+
+            <!--
+              Our rangeslider that autmatically sets the value to the output with the id of rangevalue
+            -->
+            <input
+              type="range"
+              min="80"
+              max="1200"
+              onchange="rangevalue.value = value"
+              name="price-range"
+              id="price-range"
+            />
+
+            <div class="range-output">
+              <!-- The range input -->
+              <div>$ <output id="rangevalue">80</output></div>
+
+              <div>$ 1200</div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Guests</legend>
+
+          <div>
+            <label for="checkin-date"></label>
+            <select name="guests" id="guests">
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option selected value="3">3 Guests</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Facilities</legend>
+
+          <div>
+            <label for="apartments"></label>
+            <select name="apartments" id="apartments">
+              <option value="">Type of apartment</option>
+              <option value="1-room">1-Room</option>
+              <option value="deluxe">Deluxe</option>
+              <option value="president-suit">President suit</option>
+            </select>
+
+            <div class="checkbox">
+              <label for="swimming-pool">Swimming pool</label>
+              <input checked type="checkbox" name="" id="swimming-pool" />
+            </div>
+
+            <div class="checkbox">
+              <label for="fireplace">Fireplace</label>
+              <input type="checkbox" name="" id="fireplace" />
+            </div>
+          </div>
+        </fieldset>
+
+        <div><img src="" alt="Plus" /> More Filters</div>
+      </form>
+    </aside>
+
+    <main>
+      <!-- Section with my informations -->
+      <section class="information">
+        <header>
+          <h2>Rentals.</h2>
+          <div class="breadcrumb"><a href="">Homes</a> > Apartments</div>
+        </header>
+
+        <div class="location">
+          <svg
+            fill="#000000"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+            />
+            <path d="M0 0h24v24H0z" fill="none" />
+          </svg>
+          <h5>Barcelona</h5>
+        </div>
+
+        <h1>Charming & Very Spacious</h1>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+          perspiciatis magnam inventore magni possimus. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Hic, perspiciatis magnam inventore
+          magni possimus.
+        </p>
+
+        <div class="host-profile">
+          <div class="host-profile-img">
+            <img src="sheep.jpg" alt="Host Image" />
+          </div>
+
+          <h4>
+            <span>Hosted by</span> <br />
+            <a href="">Carla Poala</a>
+          </h4>
+        </div>
+
+        <a class="button" href="">
+          <p>Request to book</p>
+          <img src="ic_arrow_forward_black_24px.svg" alt="Arrow" />
+        </a>
+      </section>
+
+      <section class="apartment-image">
+        <header>
+          <img src="ic_stars_black_24px.svg" alt="" />
+          <img src="ic_search_black_24px.svg" alt="" />
+        </header>
+      </section>
+    </main>
+  </body>
+</html>

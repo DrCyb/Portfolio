@@ -1,0 +1,28 @@
+body {
+  display: flex;
+}
+
+aside {
+  width: 15%;
+  padding: 20px;
+
+  ul {
+    margin-bottom: 50px;
+  }
+
+  li {
+    display: flex; 
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 5px;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+main {
+  width: 100%;
+  background-color: #F3F4F8;
+}

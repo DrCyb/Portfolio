@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+
+html * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background: #dddddd;
+  padding: 30px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Typography */
+h1 {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+h2 {
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* link styling */
+a {
+  text-decoration: none;
+}
+
+/* .button styling */
+a.button {
+  background: #000;
+  color: #fff;
+  font-size: 8px;
+  padding: 5px;
+}
+
+a.button img {
+  height: 10px;
+  position: relative;
+  top: 2px;
+}
+
+/* header */
+header {
+  width: 600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 15px 30px;
+}
+
+header img {
+  position: relative;
+  float: left;
+  height: 10px;
+  margin-top: 8px;
+}
+
+/* navigation */
+nav {
+  position: relative;
+  float: right;
+  font-size: 8px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+nav a {
+  color: #000;
+}
+
+/* main content */
+main {
+  width: 600px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* The first section */
+.intro-text {
+  width: 70%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.intro-text p {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+article {
+  position: relative;
+  float: left;
+  width: 32%;
+  height: 300px;
+  margin-right: 2%;
+  padding: 30px;
+  font-size: 12px;
+  color: #fff;
+
+  background-image: url(https://whyd.com/assets/home_context_first-3e98744552647d31dd24376139bd6f914222f56006d7339de674647446f90788.jpg);
+
+  /* resize the image to always cover the element */
+  background-size: cover;
+
+  /* reposition the image inside the element */
+  background-position: center;
+}
+
+.article-section {
+  padding-bottom: 10px;
+}
+
+/* selecting the last <a> inside the .article-section to remove the margin on the right side */
+.article-section a:last-child article {
+  margin-right: 0;
+}
+
+.article-2 {
+  background-image: url(https://whyd.com/assets/home_video_bg-a51a85b96f8f273f36f055d7e75c6d7f04d1d176aefed93fc6857d861ad87122.jpg);
+
+  background-position: left center;
+}
+
+.article-3 {
+  background-image: url(https://whyd.com/assets/story_aesthetic-a79938913e0a2243041a3d8c3fbec847ffe56b4baa944ce06d75307e30c59d44.jpg);
+}
+
+article h2 {
+  text-shadow: 0 0 10px #000;
+  line-height: 1.6;
+}
+
+article img {
+  background: #fff;
+  border-radius: 50%;
+  height: 20px;
+  padding: 5px;
+  box-shadow: 0 0 0px 5px rgba(255, 255, 255, 0.25);
+
+  /* reposition the arrow in the article */
+  position: absolute;
+  bottom: 30px;
+}

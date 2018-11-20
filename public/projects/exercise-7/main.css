@@ -1,0 +1,221 @@
+html {
+  background: #f4f5f9;
+}
+
+html * {
+  box-sizing: border-box;
+}
+
+/* Create a wrapper around our content to fake the size of an mobile app */
+.application-wrapper {
+  font-family: "Poppins", sans-serif;
+
+  background: #f2f7f9;
+
+  /* give the body a size of an iPhone 6 */
+  width: 375px;
+  height: 667px;
+
+  /* center the body */
+  margin: 50px auto;
+
+  padding: 32px;
+  position: relative;
+
+  /* hide the content on the horizontal axis */
+  overflow-x: hidden;
+
+  /* make it vertically scrollable */
+  overflow-y: scroll;
+
+  box-shadow: 0 25px 100px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER START */
+
+header {
+  position: relative;
+}
+
+.menu-toggle {
+  width: 18px;
+  height: 14px;
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+
+  /* Change the cursor on hover to a pointer */
+  cursor: pointer;
+}
+
+.menu-toggle .one,
+.menu-toggle .two,
+.menu-toggle .three {
+  width: 100%;
+  background: black;
+  height: 1px;
+  position: absolute;
+  transition: all 0.25s ease;
+}
+
+.menu-toggle .two {
+  top: 50%;
+}
+
+.menu-toggle .three {
+  bottom: 0;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 21px;
+}
+
+h1::first-letter {
+  float: left;
+  font-size: 48px;
+  margin-top: -14px;
+  margin-right: 7px;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 13px;
+}
+
+p {
+  font-size: 13px;
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* NAVIGATION START */
+
+nav {
+  /* move the navigation out of the body */
+  position: absolute;
+
+  /* move it to the right by 100% of its own width */
+  transform: translateX(120%);
+
+  background: white;
+  top: -32px;
+
+  /* animate it */
+  transition: all 0.5s ease;
+
+  /* hide the nav completely */
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+nav h2 {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-left: 16px;
+  margin-top: 32px;
+}
+
+.menu-open nav {
+  transform: translateX(0%);
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+
+  /* make it visible again */
+  width: 112%;
+  height: auto;
+  overflow: visible;
+}
+
+.menu-open .menu-toggle .one {
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+
+.menu-open .menu-toggle .two {
+  opacity: 0;
+}
+
+.menu-open .menu-toggle .three {
+  transform-origin: left;
+  transform: rotate(-45deg);
+}
+
+article {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+article img {
+  float: left;
+  width: 30%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.103);
+  border-radius: 3px;
+  border: 8px solid white;
+}
+
+article .article-content {
+  float: left;
+  width: 70%;
+  padding-left: 16px;
+}
+
+.article-content h2 {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #999;
+  float: left;
+  margin: 0;
+}
+
+.article-content p {
+  font-size: 12px;
+  clear: both;
+  margin: 0;
+  padding-right: 10px;
+  text-align: left;
+}
+
+.article-content .page-number {
+  color: #999;
+  float: right;
+  clear: none;
+}
+
+/* MAIN START */
+
+main {
+  margin-top: 40px;
+}
+
+main img {
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.103);
+  border-radius: 3px;
+  border: 16px solid white;
+  margin-bottom: 21px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  float: left;
+  border: 1px solid grey;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.dot.active {
+  background: #000;
+  border-color: #000;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

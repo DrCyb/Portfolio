@@ -1,0 +1,65 @@
+$table-cell-padding: 15px;
+
+.track {
+  padding: 100px 100px 0 100px;
+
+  table {
+    width: 100%;
+
+    tr {
+      border-radius: 4px;
+    }
+
+    th {
+      padding: $table-cell-padding;
+      text-align: left;
+      font-size: 14px;
+      color: #999;
+    }
+
+    td {
+      padding: $table-cell-padding;
+      background: #ffffff;
+      border-bottom: 4px solid #F3F4F8;
+
+      &:nth-child(1) {
+        width: 20px;
+      }
+
+      &:nth-child(2) {
+        width: 20px;
+      }
+
+      &:nth-child(3) {
+        width: 20px;
+      }
+
+      img {
+        width: 20px;
+      }
+
+      .play-rating {
+        &.active {
+          display: inline-block;
+          width: 4px;
+          height: 14px;
+          border-radius: 10px;
+          background: #333;
+        } 
+
+        &.inactive {
+          display: inline-block;
+          width: 4px;
+          height: 14px;
+          border-radius: 10px;
+          background: #aaa;
+        }
+
+        &.number {
+          display: inline-block;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
