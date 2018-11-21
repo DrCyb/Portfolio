@@ -219,6 +219,10 @@ header {
   .logo-name a {
     margin: 0;
   }
+  .cnt_info ul li{
+    list-style-type: none;
+    font-size: 14px;
+  }
 }
 
 .arrow {
@@ -274,6 +278,7 @@ header {
     border-right-color: transparent;
   }
 }
+
 /* ------------------------ Navigation ----------------------------- */
 .nav-item {
   font-weight: 700;
@@ -557,6 +562,9 @@ h4 {
 .contact {
   background-color: #bcc6d6;
   padding: 30px;
+}
+.cnt_info ul li{
+  list-style-type: none;
 }
 ul li p {
   color: #353d42;
